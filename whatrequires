@@ -1,4 +1,5 @@
 # This file contains recursive sources that require this package
 R-manipulateWidget
-R-rglwidget
+R-rgl
 R-rhandsontable
+R-visNetwork
