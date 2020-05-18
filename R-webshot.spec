@@ -4,7 +4,7 @@
 #
 Name     : R-webshot
 Version  : 0.5.2
-Release  : 26
+Release  : 27
 URL      : https://cran.r-project.org/src/contrib/webshot_0.5.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/webshot_0.5.2.tar.gz
 Summary  : Take Screenshots of Web Pages
@@ -13,37 +13,32 @@ License  : GPL-2.0 MIT
 Requires: R-callr
 Requires: R-jsonlite
 Requires: R-magrittr
-Requires: R-rmarkdown
 BuildRequires : R-callr
 BuildRequires : R-jsonlite
 BuildRequires : R-magrittr
-BuildRequires : R-rmarkdown
 BuildRequires : buildreq-R
 
 %description
-# webshot
-[![Travis-CI Build
-Status](https://travis-ci.org/wch/webshot.svg?branch=master)](https://travis-ci.org/wch/webshot)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/wch/webshot?branch=master&svg=true)](https://ci.appveyor.com/project/wch/webshot)
+Markdown documents.
 
 %prep
 %setup -q -c -n webshot
+cd %{_builddir}/webshot
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1574702838
+export SOURCE_DATE_EPOCH=1589770246
 
 %install
-export SOURCE_DATE_EPOCH=1574702838
+export SOURCE_DATE_EPOCH=1589770246
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
