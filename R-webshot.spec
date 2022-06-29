@@ -4,7 +4,7 @@
 #
 Name     : R-webshot
 Version  : 0.5.3
-Release  : 42
+Release  : 43
 URL      : https://cran.r-project.org/src/contrib/webshot_0.5.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/webshot_0.5.3.tar.gz
 Summary  : Take Screenshots of Web Pages
